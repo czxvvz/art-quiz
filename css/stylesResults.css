@@ -1,0 +1,39 @@
+.headerResults
+{
+    height: 5vh;
+    min-height: 120px;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.headerResultsName
+{
+    color: black;
+    font-style: Impact, fantasy;
+    font-size: 5vh;
+}
+
+.mainResults
+{
+    height: 95%;
+    width: 100%;
+}
+
+.imgResultsOfGame
+{
+    float:left;
+    height:12vmax;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    border-radius: 5vmax;
+}
+
+.imgResultsOfGame:hover
+{
+    cursor: pointer;
+}
+
+.imgResultsOfGameWrong
+{
+    filter: grayscale(100%);
+}

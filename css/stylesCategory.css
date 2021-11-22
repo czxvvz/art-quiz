@@ -1,0 +1,205 @@
+.headerCategory
+{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.buttonEscape
+{
+    float: left;
+    width: 4vmax;
+    height: 4vmax;
+    background-image: url("../icons/buttonEscape.png");
+    background-size: cover;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.nameCategoryAuthor
+{
+    margin-top: 0%;
+    text-align: center;
+    font-size: calc(30px + 1vh + 1vw);
+    font-family: Andale Mono, monospace;
+    color:darkcyan;
+}
+
+.nameCategoryAuthor::after
+{
+    content:"Категории: Авторы";
+}
+
+.nameCategoryPicture
+{
+    margin-top: 0%;
+    text-align: center;
+    font-size: calc(30px + 1vh + 1vw);
+    font-family: Andale Mono, monospace;
+    color:darkcyan;
+}
+
+.nameCategoryPicture::after
+{
+    content:"Категории: Картины";
+}
+
+.nameCategorySettings
+{
+    margin-top: 0%;
+    text-align: center;
+    font-size: calc(30px + 1vh + 1vw);
+    font-family: Andale Mono, monospace;
+    color:darkcyan;
+}
+
+.nameCategorySettings::after
+{
+    content:"Настройки";
+}
+
+.buttonCategory
+{
+    position: relative;
+    min-width: 100px;
+    min-height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:80%;
+    height: 10vh;
+    margin-top: 3vh;
+    text-align: right;
+}
+
+.buttonCategoryImageAuthor
+{
+    background-image: url("../fonts/font_author.jpg");
+    background-size: cover;
+}
+
+.buttonCategoryImagePicture
+{
+    background-image: url("../fonts/font_picture.jpg");
+    background-size: cover;
+}
+
+.numberButtonCategory
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 3vh; 
+    color:midnightblue; 
+    font-weight: bold;
+    position: absolute;
+    width: 7%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.numberButtonCategoryPlayed
+{
+    color: darkgreen;
+    background-color: azure;
+}
+
+
+.buttonListCategoryLeft
+{
+    float: left;
+    width: 4vmax;
+    height: 4vmax;
+    background-image: url("../icons/arrowleft.png");
+    background-size: cover;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-left:60%;
+    margin-top: 5%;
+}
+
+.buttonListCategoryRight
+{
+    float: left;
+    width: 4vmax;
+    height: 4vmax;
+    background-image: url("../icons/arrowright.png");
+    background-size: cover;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-top: 5%;
+    margin-left:5%;
+}
+
+
+.resultsOfCategory
+{
+    text-align: center;
+    cursor: pointer;
+    font-size: 2vh; 
+    margin-right: 3%;
+    color: black; 
+    font-weight: bold;
+    background-color:aliceblue;
+}
+
+.resultsOfCategory:hover
+{
+    background-color:cadetblue;
+}
+
+.resultsOfCategoryAbcent
+{
+    display:none;
+}
+
+@keyframes goLeft 
+{
+    0%{ margin-right: -100vw;}
+    100%{ margin-right: 0vw;}
+}
+
+@keyframes goRight 
+{
+    0%{ margin-right: 0vw;}
+    100%{ margin-right: -100vw;}
+}
+
+.goRight
+{
+    animation: goRight 2s linear forwards;
+}
+
+.goLeft
+{
+    animation: goLeft 2s linear forwards;
+}
+
+@keyframes dashDelete 
+{
+    0% {width: 0vw;}
+    100% {width: 10vw;}
+}
+
+.dashDelete
+{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position: absolute;
+    margin: 0 0 0 0;
+    background-color: aliceblue;
+    z-index: 3;
+    height: 100vh;
+    width: 0vw;
+    animation: dashDelete 0.15s ease-out 0.10s forwards;
+}
