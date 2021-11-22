@@ -1,0 +1,194 @@
+.headerAuthorGame
+{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.timer
+{
+    color: black;
+    font-style: Impact, fantasy;
+    font-size: 7vh;
+}
+
+.questionGameAuthor
+{
+    color: black;
+    font-style: DejaVu Sans Mono, monospace;
+    font-size: 3vh;
+}
+
+.questionGameAuthor::before
+{
+    content: "Кто автор этой картины?";
+}
+
+.divForDivTypeOFAnswer
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    width: 63%;
+    height: 2vw;
+    text-align: center;
+}
+
+.divTypeOFAnswer
+{
+    float: left;
+    margin-left: 3vw;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1vw;
+    background: rgb(202, 202, 202);
+}
+
+.divTypeOFAnswerRight
+{
+    background: lawngreen;
+}
+
+.divTypeOFAnswerWrong
+{
+    background: red;
+}
+
+.divImageQuestionAuthor
+{
+    text-align: center;
+}
+
+.imageQuestionAuthor
+{
+    height: 40%;
+}
+
+.buttonAnswerAuthor
+{
+    white-space:normal;
+    word-wrap:break-word;
+    float: left;
+    margin-left: 10vw;
+    margin-top: 4vh;
+    width:35vw;
+    height: 8vh;
+    min-width: 90px;
+    min-height: 80px;
+    font-size: calc(15px + 1vmax);
+    font-style: DejaVu Sans Mono, monospace;
+    background-color: deepskyblue;
+    color: indigo;
+}
+
+.buttonAnswerRight
+{
+    background-color:chartreuse;
+}
+
+.buttonAnswerWrong
+{
+    background-color:red;
+}
+
+.divEndOfCategoryBackground
+{
+    z-index: 2;
+    width:100%;
+    height: 100%;
+    background: rgba(102, 102, 102, 0.5);
+    position: absolute;
+}
+
+.divEndOfCategory
+{
+    position: absolute;
+    height: 50%;
+    width: 40%;
+    min-width: 240px;
+    margin-top: 50vh;
+    margin-left: 30%;
+    margin-bottom: 0vh;
+    margin-right: 30%;
+    background: white;
+    border-radius: 1vw;
+    text-align: center;
+    animation: raiseEndMess .5s ease-out forwards;
+}
+
+.resultOfCategory
+{
+    padding-top: 4vh;
+    font-size: calc(15px + 1vmax);
+    font-style: DejaVu Sans Mono, monospace;
+}
+
+.buttonEndOfCategory
+{
+    margin-top: 10%;  
+    width: 30%;
+    min-width: 200px;  
+    height : 15%;
+    min-height: 100px;
+    background-color: chocolate;
+    color:darkblue;
+    font-size: calc(15px + 1vmax);
+}
+
+.divMessageOfCategoryBackground
+{
+    width:100%;
+    height: 100%;
+    background: rgba(102, 102, 102, 0.5);
+    position: absolute;
+}
+
+.divMessageOfCategory
+{
+    height: 60%;
+    width: 50%;
+    min-width: 320px;
+    margin: 40vh auto 0vh auto;
+    background: white;
+    border-radius: 1vw;
+    text-align: center;
+    animation: raiseIntMess .5s ease-out forwards;
+}
+
+.buttonMessageOfCategory
+{
+    width: 28%;
+    min-width: 180px;  
+    height : 15%;
+    min-height: 100px;
+    background-color: chocolate;
+    color:darkblue;
+    font-size: calc(15px + 1vmax);
+}
+
+.imgMessageOfCategory
+{
+    float: left;
+    width: 20vmax;
+    margin: 5%;
+}
+
+.textInfMessageOfCategory
+{
+    margin-top: 0%;
+    padding-top: 3%;
+    font-size: calc(15px + 1vmax);
+    color:darkblue;
+}
+
+@keyframes raiseEndMess
+{
+    0% {margin-top:100vh; }
+    100% {margin-top: 50vh ;}
+}
+
+@keyframes raiseIntMess
+{
+    0% {margin-top:100vh; }
+    100% {margin-top: 40vh ;}
+}
