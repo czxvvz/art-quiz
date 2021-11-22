@@ -1,0 +1,112 @@
+.headerSettings
+{
+    height: 10%;
+    min-height: 120px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.divOfSettings
+{
+    width: 100%;
+    height: calc(20px + 2vmax);
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.featureOfDivSettings
+{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    float: left;
+    padding-left: 5%;
+    font-size: calc(15px + 2vw);
+    color:darkcyan;
+}
+
+.buttonSwitchSound
+{
+    float: left;
+    width: calc(15px + 2vmax);
+    height: calc(15px + 2vmax);
+    margin-left: 1%;
+    margin-right: 1%;
+    background-image: url("../icons/sOn.svg");
+}
+
+.buttonSwitchSoundOff
+{
+    background-image: url("../icons/sOf.svg"); 
+}
+
+.inputSoundVolume
+{
+    float: left;  
+    width: 20%;
+    max-width: 200px;
+    height: 100%;
+}
+
+.featureOfLabelInput
+{
+    float: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 2%;
+    font-size: calc(15px + 2vw);
+}
+
+.switch 
+{
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    position: relative;
+    margin: auto 2%;
+}
+  
+.switch input {display:none;}
+  
+.slider 
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+  
+.slider:before 
+{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 10%;
+    background-color: white;
+    transition: .4s;
+}
+  
+input:checked + .slider 
+{
+    background-color: #2196F3;
+}
+   
+input:checked + .slider:before 
+{
+    transform: translateX(26px);
+}
+
+.inputNumberTimePlay
+{
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: calc(15px + 1vmax);
+}

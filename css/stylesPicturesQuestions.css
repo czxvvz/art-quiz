@@ -1,0 +1,54 @@
+.headerPictureGame
+{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.mainPictureGame
+{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.questionGamePicture
+{
+    color: black;
+    font-style: DejaVu Sans Mono, monospace;
+    font-size: 3vh;
+}
+
+.divContainerImg
+{
+    float: left;
+    margin: 0% 0% 0% 0%;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+.imgAnswerPicture
+{
+    height: 26vmin;
+    margin-left: 12vmin;
+    margin-right: 12vmin;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.pictureAnswerRight
+{
+    height: 24vmin;
+    border: solid;
+    border-color: chartreuse;
+    border-width: 1vmin;
+}
+
+.pictureAnswerWrong
+{
+    height: 24vmin;
+    border: solid;
+    border-color: red;
+    border-width: 1vmin;
+}
